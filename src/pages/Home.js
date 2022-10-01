@@ -48,9 +48,9 @@ export default function Home() {
       <HomeContainer>
         <TitleHome>LEARNING THROUGH THE LOOKING GLASS</TitleHome>
         <div id="stars"></div>
-        {telescopesHome.map((telescope) => {
+        {telescopesHome.map((telescope, index) => {
           return (
-            <MainContainer>
+            <MainContainer key={index}>
               <TitleMain>{telescope.name}</TitleMain>
               <ImageMain src={telescope.image} />
               <DescriptionMain>{telescope.description}</DescriptionMain>
