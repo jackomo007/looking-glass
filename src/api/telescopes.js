@@ -14,7 +14,7 @@ const telescopes = [
     answer: "wise",
     image: require("../images/telescopes/wise_nebulosakarina.png"),
     miniature: require("../images/missions/wise_nebulosakarina_mini.png"),
-    options: ["wise", "galex", "planck", "hubble"],
+    options: ["galex", "wise", "planck", "hubble"],
     coordinates: { x: 444, y: 116, z: 1, r: 90 },
   },
   {
@@ -23,7 +23,7 @@ const telescopes = [
     answer: "wise",
     image: require("../images/telescopes/wise_nebulaorion.jpg"),
     miniature: require("../images/missions/wise_nebulaorion_mini.png"),
-    options: ["wise", "galex", "chandra", "james webb"],
+    options: ["galex", "chandra", "wise", "james webb"],
     coordinates: { x: 570, y: 406, z: 1, r: 90 },
   },
   {
@@ -32,7 +32,7 @@ const telescopes = [
     answer: "wise",
     image: require("../images/telescopes/wise_galaxiasSMACS0723.png"),
     miniature: require("../images/missions/wise_galaxiasSMACS0723_mini.png"),
-    options: ["wise", "chandra", "hubble", "james webb"],
+    options: ["chandra", "hubble", "james webb", "wise"],
     coordinates: { x: 532, y: 438, z: 1, r: 0 },
   },
   {
@@ -50,7 +50,7 @@ const telescopes = [
     answer: "wise",
     image: require("../images/telescopes/wise_andromeda.jpg"),
     miniature: require("../images/missions/wise_andromeda_mini.png"),
-    options: ["wise", "spitzer", "chandra", "hubble"],
+    options: ["spitzer", "wise", "chandra", "hubble"],
     coordinates: { x: 644, y: 476, z: 1, r: 180 },
   },
   {
@@ -59,7 +59,7 @@ const telescopes = [
     answer: "wise",
     image: require("../images/telescopes/wise_cometaSidingSpring.jpg"),
     miniature: require("../images/missions/wise_cometaSidingSpring_mini.png"),
-    options: ["wise", "galex", "chandra", "hubble"],
+    options: ["galex", "chandra", "wise", "hubble"],
     coordinates: { x: 704, y: 398, z: 1, r: 0 },
   },
   {
@@ -77,7 +77,7 @@ const telescopes = [
     answer: "spitzer",
     image: require("../images/telescopes/spitzer_nebulosakarina.png"),
     miniature: require("../images/missions/spitzer_nebulosakarina_mini.png"),
-    options: ["spitzer", "galex", "chandra", "james webb"],
+    options: ["galex", "chandra", "spitzer", "james webb"],
     coordinates: { x: 720, y: 422, z: 1, r: 180 },
   },
   {
@@ -86,7 +86,7 @@ const telescopes = [
     answer: "spitzer",
     image: require("../images/telescopes/spitzer_nebulosahelix.jpg"),
     miniature: require("../images/missions/spitzer_nebulosahelix_mini.png"),
-    options: ["spitzer", "galex", "chandra", "hubble"],
+    options: ["galex", "chandra", "hubble", "spitzer"],
     coordinates: { x: 688, y: 566, z: 1, r: 270 },
   },
   {
@@ -95,7 +95,7 @@ const telescopes = [
     answer: "spitzer",
     image: require("../images/telescopes/spitzer_nebulosaGodzilla.jpg"),
     miniature: require("../images/missions/spitzer_nebulosaGodzilla_mini.png"),
-    options: ["spitzer", "neowise", "chandra", "hubble"],
+    options: ["neowise", "spitzer", "chandra", "hubble"],
     coordinates: { x: 564, y: 374, z: 1, r: 90 },
   },
   {
@@ -113,7 +113,7 @@ const telescopes = [
     answer: "spitzer",
     image: require("../images/telescopes/spitzer_galaxiasSMACS0723.png"),
     miniature: require("../images/missions/spitzer_galaxiasSMACS0723_mini.png"),
-    options: ["spitzer", "james webb", "chandra", "wise"],
+    options: ["james webb", "spitzer", "chandra", "wise"],
     coordinates: { x: 596, y: 446, z: 1, r: 90 },
   },
   {
@@ -122,7 +122,7 @@ const telescopes = [
     answer: "spitzer",
     image: require("../images/telescopes/spitzer_ColisiónplanetesimalesalrededorestrellaHD166191.jpg"),
     miniature: require("../images/missions/spitzer_ColisiónplanetesimalesalrededorestrellaHD166191_mini.png"),
-    options: ["spitzer", "galex", "wise", "hubble"],
+    options: ["galex", "wise", "hubble", "spitzer"],
     coordinates: { x: 644, y: 406, z: 1, r: 270 },
   },
   {
@@ -140,7 +140,7 @@ const telescopes = [
     answer: "neowise",
     image: require("../images/telescopes/neowise_cometacatalina.jpg"),
     miniature: require("../images/missions/neowise_cometacatalina_mini.png"),
-    options: ["neowise", "galex", "james webb", "spitzer"],
+    options: ["galex", "neowise", "james webb", "spitzer"],
     coordinates: { x: 522, y: 406, z: 1.4, r: 0 },
   },
   {
@@ -158,7 +158,7 @@ const telescopes = [
     answer: "james webb",
     image: require("../images/telescopes/james_nebulosakarina.jpg"),
     miniature: require("../images/missions/james_nebulosakarina_mini.png"),
-    options: ["james webb", "galex", "chandra", "neowise"],
+    options: ["galex", "james webb", "chandra", "neowise"],
     coordinates: { x: 444, y: 62, z: 1, r: 90 },
   },
   {
@@ -176,7 +176,7 @@ const telescopes = [
     answer: "james webb",
     image: require("../images/telescopes/james_galaxiasSMACS0723.jpg"),
     miniature: require("../images/missions/james_galaxiasSMACS0723_mini.png"),
-    options: ["james webb", "galex", "chandra", "planck"],
+    options: ["galex", "chandra", "planck", "james webb"],
     coordinates: { x: 916, y: 442, z: 1.3, r: 0 },
   },
   {
@@ -185,7 +185,7 @@ const telescopes = [
     answer: "hubble and spitzer",
     image: require("../images/telescopes/hubble_spitzer_galaxyArp148.jpg"),
     miniature: require("../images/missions/hubble_spitzer_galaxyArp148_mini.png"),
-    options: ["hubble and spitzer", "galex", "chandra", "hubble"],
+    options: ["hubble and spitzer", "galex", "chandra and spitzer", "hubble"],
     coordinates: { x: 556, y: 446, z: 1.3, r: 90 },
   },
   {
@@ -194,7 +194,7 @@ const telescopes = [
     answer: "hubble",
     image: require("../images/telescopes/hubble_nebulosaMyCn18.jpg"),
     miniature: require("../images/missions/hubble_nebulosaMyCn18_mini.png"),
-    options: ["hubble", "neowise", "james webb", "hale"],
+    options: ["neowise", "james webb", "hubble", "hale"],
     coordinates: { x: 532, y: 358, z: 1.8, r: 0 },
   },
   {
@@ -203,7 +203,7 @@ const telescopes = [
     answer: "hubble",
     image: require("../images/telescopes/hubble_andromeda.jpg"),
     miniature: require("../images/missions/hubble_andromeda_mini.png"),
-    options: ["hubble", "planck", "wise", "james webb"],
+    options: ["planck", "wise", "james webb", "hubble"],
     coordinates: { x: 596, y: 310, z: 1, r: 0 },
   },
   {
@@ -212,7 +212,7 @@ const telescopes = [
     answer: "hubble",
     image: require("../images/telescopes/hubble_grupogasIRAS20324.jpg"),
     miniature: require("../images/missions/hubble_grupogasIRAS20324_mini.png"),
-    options: ["hubble", "hubble and spitzer", "chandra", "spitzer"],
+    options: ["hubble and spitzer", "hubble", "chandra", "spitzer"],
     coordinates: { x: 460, y: 302, z: 1.9, r: 180 },
   },
   {
@@ -221,7 +221,7 @@ const telescopes = [
     answer: "hubble",
     image: require("../images/telescopes/hubble_galaxiaNGC4214.jpg"),
     miniature: require("../images/missions/hubble_galaxiaNGC4214_mini.png"),
-    options: ["hubble", "james webb", "chandra", "galex"],
+    options: ["james webb", "chandra", "galex", "hubble"],
     coordinates: { x: 572, y: 678, z: 1.3, r: 90 },
   },
   {
@@ -229,7 +229,7 @@ const telescopes = [
     answer: "hubble",
     image: require("../images/telescopes/hubble_explosao.jpg"),
     miniature: require("../images/missions/hubble_explosao_mini.png"),
-    options: ["hubble", "galex", "wise", "james webb"],
+    options: ["galex", "hubble", "wise", "james webb"],
     coordinates: { x: 550, y: 214, z: 1.6, r: 180 },
   },
   {
@@ -247,7 +247,7 @@ const telescopes = [
     answer: "galex",
     image: require("../images/telescopes/galex_nebuahelix.jpg"),
     miniature: require("../images/missions/galex_nebuahelix_mini.png"),
-    options: ["galex", "hubble", "chandra", "spitzer"],
+    options: ["hubble", "chandra", "galex", "spitzer"],
     coordinates: { x: 532, y: 470, z: 2, r: 180 },
   },
   {
@@ -265,7 +265,7 @@ const telescopes = [
     answer: "galex",
     image: require("../images/telescopes/galex_CúmuloGlobularNGC1851.jpg"),
     miniature: require("../images/missions/galex_CúmuloGlobularNGC1851_mini.png"),
-    options: ["galex", "wise", "planck", "spitzer"],
+    options: ["wise", "galex", "planck", "spitzer"],
     coordinates: { x: 492, y: 510, z: 1, r: 180 },
   },
   {
@@ -274,7 +274,7 @@ const telescopes = [
     answer: "galex",
     image: require("../images/telescopes/galex_Centaurus-A.jpg"),
     miniature: require("../images/missions/galex_Centaurus-A_mini.png"),
-    options: ["galex", "neowise", "hale", "james webb"],
+    options: ["neowise", "hale", "galex", "james webb"],
     coordinates: { x: 678, y: 174, z: 1.3, r: 90 },
   },
   {
@@ -283,7 +283,7 @@ const telescopes = [
     answer: "galex",
     image: require("../images/telescopes/galex_andromeda.jpg"),
     miniature: require("../images/missions/galex_andromeda_mini.png"),
-    options: ["galex", "hubble and spitzer", "james webb", "spitzer"],
+    options: ["hubble and spitzer", "james webb", "galex", "spitzer"],
     coordinates: { x: 492, y: 406, z: 1, r: 180 },
   },
   {
@@ -301,7 +301,7 @@ const telescopes = [
     answer: "galex",
     image: require("../images/telescopes/galex_AnatomyofTriangulum.jpg"),
     miniature: require("../images/missions/galex_AnatomyofTriangulum_mini.png"),
-    options: ["galex", "hubble", "chandra", "spitzer"],
+    options: ["hubble", "galex", "chandra", "spitzer"],
     coordinates: { x: 630, y: 438, z: 1, r: 90 },
   },
   {
@@ -319,7 +319,7 @@ const telescopes = [
     answer: "chandra",
     image: require("../images/telescopes/chandra_abell2146.jpg"),
     miniature: require("../images/missions/chandra_abell2146_mini.png"),
-    options: ["chandra", "planck", "james webb", "hubble"],
+    options: ["planck", "james webb", "hubble", "chandra"],
     coordinates: { x: 556, y: 190, z: 1, r: 270 },
   },
   {

@@ -192,7 +192,7 @@ export default function Operator() {
       setWinner(true);
       setTimeout(() => {
         setWinner(false);
-      }, 10000);
+      }, 9000);
     } else {
       Swal.fire({
         position: "top-center",

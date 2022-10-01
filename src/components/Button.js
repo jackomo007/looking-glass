@@ -1,24 +1,41 @@
 import React from "react";
 import styled from "styled-components";
 
-const ButtonLayout = styled.div`
+const ButtonLayout = styled((props) => <div {...props} />)`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 8%;
+  height: ${(props) => props.height};
   background-color: #ea80fc;
   border-radius: 20px;
-  font-size: 1.5vw;
+  font-size: ${(props) => props.fontSize ??  "1.5vw" };
   color: white;
   cursor: pointer;
 
   :hover {
-    background-color: white;
-    color: #ea80fc;
+    background-color: ${(props) => props.backColor ??  "white" };
+    color: ${(props) => props.fontColor ?? "#ea80fc"};
   }
 `;
 
-export default function Button({label = 'Button', onClicked = () => {}}) {
-  return <ButtonLayout onClick={() => onClicked()}>{label}</ButtonLayout>;
+export default function Button({
+  label = "Button",
+  height = "100%",
+  backColor,
+  fontSize,
+  color,
+  onClicked = () => {},
+}) {
+  return (
+    <ButtonLayout
+      height={height}
+      backColor={backColor}
+      fontColor={color}
+      fontSize={fontSize}
+      onClick={() => onClicked()}
+    >
+      {label}
+    </ButtonLayout>
+  );
 }
