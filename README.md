@@ -74,6 +74,7 @@ Here the application is installed on an android device:
 
 The functioning of this application can be seen below:
 
+https://github.com/jackomo007/looking-glass/blob/main/src/images/looking.gif
 
 
 
