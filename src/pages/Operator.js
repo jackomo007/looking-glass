@@ -182,6 +182,12 @@ export default function Operator() {
     const alignY = y - 4 <= data.y || data.y >= y + 4;
     const alingX = x - 4 <= data.x || data.x >= x + 4;
     if (alignY && alingX && zoom === data.z && rotation === data.r) {
+      const actualScore = localStorage.getItem('score')
+      if (!actualScore) {
+        localStorage.setItem('score', 100)
+      } else {
+        localStorage.setItem('score', +actualScore + 100)
+      }
       Swal.fire({
         position: "top-center",
         icon: "success",
@@ -192,7 +198,8 @@ export default function Operator() {
       setWinner(true);
       setTimeout(() => {
         setWinner(false);
-      }, 9000);
+        window.location.reload()
+      }, 6000);
     } else {
       Swal.fire({
         position: "top-center",
@@ -280,7 +287,7 @@ export default function Operator() {
             <br />
             <UpArrow onClick={() => move("y", false)}></UpArrow>
             <Horizontal>
-              <LeftArrow onClick={() => move("x", false)}></LeftArrow>
+              <LeftArrow onClick={() => move("x", false)}></LeftArrow>{x}{y}
               <RightArrow onClick={() => move("x", true)}></RightArrow>
             </Horizontal>
             <DownArrow onClick={() => move("y", true)}></DownArrow>

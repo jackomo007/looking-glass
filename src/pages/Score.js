@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
@@ -35,27 +35,59 @@ const Control = styled((props) => <div {...props} />)`
 
 export default function Score() {
   const history = useHistory();
-  const [positionY, setPositionY] = useState(34)
-  const [rotation, setRotation] = useState(0)
-  const [positioX, setPositionX] = useState(0)
+  const [positionY, setPositionY] = useState(34);
+  const [rotation, setRotation] = useState(0);
+  const [positioX, setPositionX] = useState(0);
 
   const Movement = () => {
-    // top, rotate, margin-left
-    const bad = [39, -70, -115]
-    const fair = [34, -24, -60]
-    const good = [34, 30, 50]
-    const awesome = [39, 70, 120]
-  }
+    // const actualScore = +localStorage.getItem("score");
+    const actualScore = 1600;
+    if (actualScore) {
+      if (actualScore <= 600) {
+        setPositionY(290);
+        setRotation(-70);
+        setPositionX(-115);
+      }
+
+      if (600 < actualScore && actualScore <= 800) {
+        setPositionY(250);
+        setRotation(-24);
+        setPositionX(-60);
+      }
+
+      if (800 < actualScore && actualScore <= 1000) {
+        setPositionY(250);
+        setRotation(30);
+        setPositionX(50);
+      }
+
+      if (actualScore > 1500) {
+        setPositionY(290);
+        setRotation(70);
+        setPositionX(120);
+      }
+    }
+  };
+
+  useEffect(() => {
+    if (localStorage.getItem("score") !== null) {
+      Movement();
+    }
+  }, []);
 
   return (
     <>
       <Header />
       <CardLayout>
         <ImageContainer>
-          <img style={{ width: "500px" }} src={score} />
+          <img style={{ width: "500px" }} src={score} alt="score" />
         </ImageContainer>
-        <Control top={`${positionY}vh`} transform={`rotate(${rotation}deg)`} marginLeft={`${positioX}px`}></Control>
-        <Button onClicked={() => goToGamePage(history)} label={"Continue"} />
+        <Control
+          top={`${positionY}px`}
+          transform={`rotate(${rotation}deg)`}
+          marginLeft={`${positioX}px`}
+        ></Control>
+        <Button onClicked={() => goToGamePage(history)} label={"Continue Playing!"} />
       </CardLayout>
     </>
   );

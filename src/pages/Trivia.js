@@ -29,12 +29,11 @@ const Description = styled.div`
   color: white;
 `;
 
-const randomNumber = Math.floor(Math.random() * 37);
-
 export default function Trivia() {
   const [questions, setQuestions] = useState([]);
   const [control, setControl] = useState(0);
   const [winner, setWinner] = useState(false);
+  const [correctAnswer, setCorrectAnswer] = useState(0);
 
   const createRounds = () => {
     const elements = [];
@@ -52,6 +51,7 @@ export default function Trivia() {
         title: "Very good!",
         showConfirmButton: false,
       });
+      setCorrectAnswer(correctAnswer + 1);
     } else {
       Swal.fire({
         position: "top-center",
@@ -60,11 +60,28 @@ export default function Trivia() {
         showConfirmButton: false,
       });
     }
+
     if (control === 9) {
-      setWinner(true);
-      setTimeout(() => {
-        setWinner(false);
-      }, 9000);
+      if (correctAnswer > 4) {
+        const actualScore = localStorage.getItem("score");
+        if (!actualScore) {
+          localStorage.setItem("score", 100);
+        } else {
+          localStorage.setItem("score", +actualScore + 100);
+        }
+        Swal.fire({
+          position: "top-center",
+          icon: "success",
+          title: "Awesome!",
+          text: "You are genious, an expert in Satellites!",
+          showConfirmButton: false,
+        });
+        setWinner(true);
+        setTimeout(() => {
+          setWinner(false);
+        }, 9000);
+        window.location.reload();
+      }
     } else {
       setControl(control + 1);
     }
