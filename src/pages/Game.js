@@ -8,7 +8,7 @@ import games from "../api/games";
 const CardContainer = styled.div`
   background-color: #121212 !important;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
   background-color: white;

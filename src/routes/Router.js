@@ -5,7 +5,6 @@ import Home from "../pages/Home.js";
 import Game from "../pages/Game.js";
 import Score from "../pages/Score.js";
 import Operator from "../pages/Operator.js";
-import Puzzle from "../pages/Puzzle.js";
 import Trivia from "../pages/Trivia.js";
 import "../index.css";
 
@@ -16,7 +15,6 @@ const Router = () => {
         <Route exact path="/" component={Home} />
         <Route exact path="/games" component={Game} />
         <Route exact path="/operator" component={Operator} />
-        <Route exact path="/puzzle" component={Puzzle} />
         <Route exact path="/trivia" component={Trivia} />
         <Route exact path="/score" component={Score} />
         <Route>

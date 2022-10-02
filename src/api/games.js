@@ -10,19 +10,9 @@ const games = [
     location: "/operator",
   },
   {
-    time: "+5min",
-    score: "50pts",
-    image: require("../images/operator.png"),
-    title: "Puzzle",
-    description:
-      "Try this Puzzle game to sharp your brain with this amazing images captured outside, in the wild space.",
-    labelButton: "Let's  Puzzled",
-    location: "/puzzle",
-  },
-  {
     time: "+2min",
     score: "100pts",
-    image: require("../images/operator.png"),
+    image: require("../images/trivia.png"),
     title: "Trivia",
     description:
       "Try this Trivia to guess with wich Space Telescope was captured this beautiful images",

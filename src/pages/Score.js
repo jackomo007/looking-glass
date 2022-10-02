@@ -40,8 +40,7 @@ export default function Score() {
   const [positioX, setPositionX] = useState(0);
 
   const Movement = () => {
-    // const actualScore = +localStorage.getItem("score");
-    const actualScore = 1600;
+    const actualScore = +localStorage.getItem("score");
     if (actualScore) {
       if (actualScore <= 600) {
         setPositionY(290);
