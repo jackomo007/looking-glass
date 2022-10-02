@@ -35,7 +35,7 @@ const Control = styled((props) => <div {...props} />)`
 
 export default function Score() {
   const history = useHistory();
-  const [positionY, setPositionY] = useState(34);
+  const [positionY, setPositionY] = useState(245);
   const [rotation, setRotation] = useState(0);
   const [positioX, setPositionX] = useState(0);
 
