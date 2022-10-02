@@ -65,7 +65,7 @@ For example, here we have the application running in the chrome browser:
 
 Here the application is installed on a Windows system:
 
-![image](https://user-images.githubusercontent.com/48386386/193458102-3b7ff030-a292-477b-a12f-839477af5978.png)
+![image](https://user-images.githubusercontent.com/48386386/193461195-0c80caf4-55d5-4d5f-a2e6-666975444072.png)
 
 Here the application is installed on an android device:
 
