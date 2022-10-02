@@ -73,7 +73,7 @@ export default function Trivia() {
           position: "top-center",
           icon: "success",
           title: "Awesome!",
-          text: "You are genious, an expert in Satellites!",
+          text: "You are genious, an expert in Space Telescopes!",
           showConfirmButton: false,
         });
         setWinner(true);

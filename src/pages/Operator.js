@@ -192,7 +192,7 @@ export default function Operator() {
         position: "top-center",
         icon: "success",
         title:
-          "Congratulations!, you are officilaly an Satellite Operator Engineer.",
+          "Congratulations!, you are officilaly an Space Telescope Operator Engineer.",
         showConfirmButton: false,
       });
       setWinner(true);
@@ -234,12 +234,12 @@ export default function Operator() {
       <Container>
         <Intro>
           <h1 style={{ color: "white", margin: "auto" }}>
-            Welcome to the Satellite Operator Control Academy
+            Welcome to the Space Telescope Operator Control Academy
           </h1>
           <p style={{ color: "white", margin: "auto" }}>
             In this game you are trying to gain the title of{" "}
             <span style={{ color: "#EA80FC" }}>
-              "Satellite Operator Engineer"
+              "Space Telescope Operator Engineer"
             </span>
           </p>
           <p style={{ color: "white", margin: "auto" }}>
