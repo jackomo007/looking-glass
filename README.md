@@ -21,6 +21,7 @@
 - It is an application that works online and offline, based on PWA technology. For each correct answer the player accumulates points that are presented in a scoring section.
 
 ## ⚙️ How much can develop with more time in the future:
+- Make configurations in the design to make it more responsive.
 - A more advanced game could involve an app that simulates images using the NASA-provided WebbPSF tool.
 - Other games of different difficulty level.
 
@@ -54,7 +55,11 @@ npm start
 
 ## Finally
 
+![image](https://user-images.githubusercontent.com/48386386/193457867-8603753b-6d1c-4c52-8095-6c8d01b9403d.png)
+
 The functioning of this application can be seen below:
+
+
 
 
 
